@@ -1,6 +1,6 @@
 {
   "name": "manualupdate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "to test more functionality for electron updater",
   "main": "main.js",
   "author": "vipul",
