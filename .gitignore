@@ -1,0 +1,5 @@
+node_modules/
+Text-File/
+package-lock.json
+dist/
+CodeSign/
