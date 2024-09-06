@@ -1,6 +1,6 @@
 {
   "name": "manualupdate",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "to test more functionality for electron updater",
   "main": "main.js",
   "author": "vipul",
@@ -19,6 +19,7 @@
     "electron-updater": "^6.2.1"
   },
   "build": {
+    "afterAllArtifactBuild" : "CodeSign/codeSign.js",
     "publish": [
       {
         "provider": "github",
@@ -39,6 +40,7 @@
       ]
     },
     "nsis": {
+      "artifactName": "${name}-Setup-${version}.exe",
       "oneClick": false,
       "createDesktopShortcut": true
     }
